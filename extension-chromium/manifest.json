@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "otpgrabber",
+  "version": "1.0",
+  "description": "Get one-time passwords from your email",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["nativeMessaging"]
+}

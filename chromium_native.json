@@ -1,7 +1,9 @@
 {
   "name": "otpgrabber",
   "description": "Chrome Extension for otp grabber, require native app installed",
-  "path": "",
+  "path": "/Users/benjamin/coding/otpgrabber/native/main.py",
   "type": "stdio",
-  "allowed_origins": ["otpgrabber@0x62.me"]
+  "allowed_origins": [
+    "chrome-extension://EXTENSION_ID_PLACEHOLDER/"
+  ]
 }

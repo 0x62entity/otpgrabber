@@ -1,11 +1,14 @@
 async function get() {
-  try {
-    const res = await browser.runtime.sendMessage({ action: "get", message: "get" });
-    return res;
-  } catch (error) {
-    console.log(`failed to get otp: ${error}`);
-    return '654321';
-  }
+  return new Promise((resolve, reject) => {
+    chrome.runtime.sendMessage({ action: "get", message: "get" }, (res) => {
+      if (chrome.runtime.lastError) {
+        console.log(`failed to get otp: ${chrome.runtime.lastError.message}`);
+        resolve('');
+      } else {
+        resolve(res);
+      }
+    });
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {

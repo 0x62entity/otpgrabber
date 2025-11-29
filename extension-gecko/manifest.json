@@ -5,10 +5,6 @@
 
   "description": "Get one-time passwords from your email",
 
-  "icons": {
-    "48": "icons/border-48.png"
-  },
-
   "browser_specific_settings": {
     "gecko": {
       "id": "otpgrabber@0x62.me"
