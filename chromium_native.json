@@ -4,6 +4,6 @@
   "path": "/Users/benjamin/coding/otpgrabber/native/main.py",
   "type": "stdio",
   "allowed_origins": [
-    "chrome-extension://EXTENSION_ID_PLACEHOLDER/"
+    "chrome-extension://fenaheecbekhfdmlelbmgignkgijoloh/"
   ]
 }
