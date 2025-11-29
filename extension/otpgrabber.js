@@ -1,5 +1,11 @@
-function get() {
-  return "123456";
+async function get() {
+  try {
+    const res = await browser.runtime.sendMessage({ action: "get", message: "get" });
+    return res;
+  } catch (error) {
+    console.log(`failed to get otp: ${error}`);
+    return '654321';
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   btn.addEventListener('click', async () => {
-    label.textContent = get();
+    label.textContent = await get();
   });
 });
