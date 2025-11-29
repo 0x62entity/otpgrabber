@@ -1,0 +1,7 @@
+{
+  "name": "otpgrabber",
+  "description": "Firefox Extension for otp grabber, require native app installed",
+  "path": "",
+  "type": "stdio",
+  "allowed_extensions": ["otpgrabber@0x62.me"]
+}
