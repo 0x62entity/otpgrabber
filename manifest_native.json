@@ -1,0 +1,7 @@
+{
+  "name": "otpgrabber",
+  "description": "Chrome Extension for otp grabber, require native app installed",
+  "path": "",
+  "type": "stdio",
+  "allowed_origins": [""]
+}

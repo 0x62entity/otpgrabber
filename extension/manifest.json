@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "otpgrabber",
+  "version": "1.0",
+
+  "description": "Get one-time passwords from your email",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "otpgrabber@0x62.me"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": ["nativeMessaging"]
+}
